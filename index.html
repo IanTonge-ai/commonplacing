@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quote Bot</title>
+    <style>
+      body { font-family: sans-serif; padding: 20px; }
+      #response { margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <h2>Reflective Quote Finder</h2>
+    <label>Theme: <input type="text" id="theme" /></label><br><br>
+    <label>Category:
+      <select id="category">
+        <option value="Literature">Literature</option>
+        <option value="Philosophy">Philosophy</option>
+        <option value="Self-Development">Self-Development</option>
+      </select>
+    </label><br><br>
+    <button onclick="getQuote()">Get Quote</button>
+    <div id="response"></div>
+    <script src="bot.js"></script>
+  </body>
+</html>
